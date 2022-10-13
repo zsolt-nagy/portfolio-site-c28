@@ -1,0 +1,123 @@
+/* Reset */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: rgb(0, 25, 50);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+}
+
+.main-menu > .main-menu-item {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.main-menu .main-menu-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.main-menu > .main-menu-item:hover {
+  color: goldenrod;
+}
+
+/* Main area */
+.main-banner {
+  text-align: center;
+  padding: 20px 0;
+  background-color: darkcyan;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.headshot {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.skills {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about {
+  background-color: darkcyan;
+  color: whitesmoke;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.portfolio-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio-image {
+  width: 26vw;
+  margin: 2rem 0;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-column {
+  font-size: 2rem;
+  margin: 2rem;
+  width: 33vw;
+  text-align: left;
+}
+
+.download-button {
+  border: 3px solid whitesmoke;
+  color: whitesmoke;
+  background: none;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  /* To avoid user agent font override, we need: */
+  font-family: inherit;
+  /* To use .download-button on links, we need: */
+  text-decoration: none;
+}
+
+.download-button:hover {
+  color: black;
+  background-color: whitesmoke;
+}
