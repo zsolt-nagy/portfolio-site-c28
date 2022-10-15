@@ -38,3 +38,5 @@ So that I can get inspiration for my own work.
 ```
 
 ## Wireframes
+
+<img src="https://github.com/zsolt-nagy/portfolio-site-c28/blob/main/wireframe/wireframe_c28.png?raw=true" alt="Website wireframe" />
