@@ -179,3 +179,9 @@ h1 {
 .social-media-icon {
   height: 4rem;
 }
+
+@media screen and (max-width: 768px) {
+  .form-row {
+    width: 80%;
+  }
+}
