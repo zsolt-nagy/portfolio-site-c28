@@ -103,44 +103,54 @@
         <button class="download-button">Download Resume</button>
       </section>
       <section class="contact">
-        <h2>Contact me</h2>
+        <h2 class="title">Contact me</h2>
         <form action="#">
           <div class="form-row">
-            <label>
+            <label class="form-label" for="name-field">
               Name:
-              <input type="text" name="full-name" />
             </label>
+            <input type="text" name="full-name" id="name-field" class="form-input" />
           </div>
           <div class="form-row">
-            <label>
+            <label class="form-label" for="email-field">
               Email:
-              <input type="email" name="email" />
             </label>
+            <input type="email" name="email" id="email-field" class="form-input" />
           </div>
           <div class="form-row">
-            <label>
+            <label class="form-label" for="message-field">
               Message:
-              <textarea name="message" cols="30" rows="10"></textarea>
             </label>
+            <textarea id="message-field" name="message" cols="30" rows="10" class="form-input"></textarea>
           </div>
           <div class="form-row">
-            <button type="submit">Send message</button>
+            <button type="submit" class="send-button button">Send message</button>
           </div>
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <section class="footer-address">
         <h3>Location</h3>
         <p>Address 12</p>
-        <p>10112 City</p>
+        <p>10111 City</p>
       </section>
       <section>
-        <h3>Social media links</h3>
-        <ul>
-          <li>LinkedIn</li>
-          <li>GitHub</li>
-        </ul>
+        Copyricht &copy; 2022 Zsolt Nagy
+      </section>
+      <section class="social-media-column">
+        <a href="#" class="social-media-link">
+          <img 
+            src="./images/linkedin.svg" 
+            alt="LinkedIn" 
+            class="social-media-icon" />
+        </a>
+        <a href="#" class="social-media-link">
+          <img 
+            src="./images/github.svg" 
+            alt="GitHub" 
+            class="social-media-icon" />
+        </a>
       </section>
     </footer>
   </body>
