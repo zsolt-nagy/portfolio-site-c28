@@ -35,6 +35,15 @@ html {
   color: goldenrod;
 }
 
+.navbar-toggler {
+  border: 1px solid lightgrey;
+}
+
+.navbar-toggler-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 main {
   padding-top: 64px;
 }
@@ -89,6 +98,7 @@ h1 {
 .column-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .text-column {
@@ -171,9 +181,24 @@ h1 {
   height: 4rem;
 }
 
+@media screen and (max-width: 992px) {
+  .portfolio-image {
+    width: 42vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .form-row {
     width: 80%;
   }
+
+  .text-column {
+    width: 80vw;
+  }  
 }
-/* https://getbootstrap.com/docs/4.0/components/navbar/ */
+
+@media screen and (max-width: 576px) {
+  .portfolio-image {
+    width: 80vw;
+  } 
+}
