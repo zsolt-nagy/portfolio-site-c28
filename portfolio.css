@@ -13,43 +13,34 @@ html {
 }
 
 /* Header */
-header {
+.navbar {
   background-color: rgb(0, 25, 50);
   color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
   padding: 10px 40px;
-  height: 70px;
-  position: fixed;
-  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+  margin: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: whitesmoke;  
+}
+
+.nav-link:hover {
+  color: goldenrod;
 }
 
 main {
-  padding-top: 70px;
+  padding-top: 64px;
 }
 
 h1 {
   font-size: 3.5rem;
-}
-
-.main-menu {
-  display: flex;
-  list-style: none;
-}
-
-.main-menu > .main-menu-item {
-  margin: 10px;
-  font-size: 2rem;
-}
-
-.main-menu .main-menu-link {
-  text-decoration: underline;
-  cursor: pointer;
-  color: whitesmoke;
-}
-
-.main-menu > .main-menu-item:hover {
-  color: goldenrod;
 }
 
 /* Main area */
@@ -185,3 +176,4 @@ h1 {
     width: 80%;
   }
 }
+/* https://getbootstrap.com/docs/4.0/components/navbar/ */
